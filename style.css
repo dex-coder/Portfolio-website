@@ -1,0 +1,956 @@
+
+body {
+    font: 392 15px/30px "Poppins", sans-serif;
+    letter-spacing: 0px;
+    background-color: rgb(45, 44, 44);
+    transition: all 0.3s ease;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+/***********************************   Global Styles  ******************************************/
+.container{
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.section_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section_title h1{
+    color: #cccc;
+    font-weight: 600;
+    font-size: 40px;
+}
+.section_title .underline{
+    background-color: #feb633;
+    width: 105px;
+    height: 3px;
+}
+
+section{
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    color: #9f9f9f;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    color: #ffffff;
+    transition: all 0.1s ease;
+}
+
+a:hover{
+    color: #feb633;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    color: #FFF;
+    transition: all  ease;
+}
+li:hover{
+    color: #feb633;
+}
+
+footer{
+    border-bottom: 1px solid;
+    overflow-x: hidden;
+}
+
+.nav_toogle{
+    display: none;
+}
+.nav_toogle i{
+    padding: 13px 3px;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.pre_loader{
+    background-color: #2E232E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blanchedalmond;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+    z-index: 999;
+
+}
+.pre_loader img{
+    width: 100px;
+    height: 100px;
+}
+
+.hide_loader{
+    visibility: hidden;
+    z-index: -999;
+}
+.my_elements{
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+/***********************************   header Styles  ******************************************/
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+header .navbar_logo{
+    color: #feb633;
+}
+header .navbar_logo h1{
+    font-weight: 700;
+}
+
+header .navbar_links ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-top: 10px;
+    
+    
+}
+header .navbar_links ul li{
+    list-style: none;
+    display: inline;
+    
+}
+
+header .navbar_links ul li a{
+    margin-left: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.active{
+  color: #feb633;  
+}
+
+.fixed.navbar_container{
+    position: fixed;
+    background-color: #333333;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease;
+}
+
+/***********************************   Home Styles  ******************************************/
+
+#home .container{
+    padding-top: 100px;
+    padding-bottom: 110px;
+    
+}
+
+.home_content {
+    color: #ffffff;
+}
+.home_content .info{
+  padding: 125px 15px 0;
+}
+.home_content h2{
+    font-size: 60px;
+}
+.home_content h3{
+    font-size: 30px;
+}
+.home_content .hire_btn{
+    margin-top: 20px;
+}
+.info .hire_btn button{
+    color: #FFF;
+    background-color: #feb633;
+    font-size: 20pt;
+    padding: 15px 50px;
+    border-radius: 7px;
+    border: 2px solid #feb633;
+    transition: all .5s ease;
+}
+
+.info .hire_btn button:hover{
+    background-color: rgb(45, 44, 44);
+    color: #feb633;
+}
+
+
+.home_content img{
+    width: 100%;
+}
+
+
+
+
+
+/***********************************   About Me Styles  ******************************************/
+#about_me{
+    background-color: rgb(60, 59, 59);
+    
+}
+
+.about_content .section_title h1{
+    color: #FFF;
+}
+.about_content .section_title .underline{
+    background-color: #feb633;
+    width: 105px;
+    height: 3px;
+}
+
+.about_content .about_text{
+    color: #FFF;
+}
+
+
+.about_content .about_buttons button{
+    color: #FFF;
+    background-color: #feb633;
+    font-size: 20pt;
+    padding: 15px 60px;
+    border-radius: 7px;
+    border: 2px solid #feb633;
+    transition: all .5s ease;
+    margin-right: 20px;
+}
+
+.about_buttons  button:hover{
+    background-color: rgb(45, 44, 44);
+}
+.about_buttons:nth-child(2){
+    background-color: rgb(45, 44, 44);
+}
+/***********************************   Services Styles  ******************************************/
+
+
+.service_content  .service_text{
+    padding: 50px 100px;
+    text-align: center;
+    color: #ffffff;
+}
+.services_container{
+    display: flex;
+    padding: 0 15px;
+}
+.service_box .overlay h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.service_box .overlay{
+    padding: 50px 30px;
+    color: #000000;
+}
+.service_box .overlay p{
+    color: #333333;
+}
+.services_container .service_box:nth-child(1){
+    background-color: #28a745;
+}
+.services_container .service_box:nth-child(2){
+    background-color: tomato;
+}
+.services_container .service_box:nth-child(3){
+    background-color: rgb(255 138 248);
+}
+.services_container .service_box:nth-child(4){
+    background-color: rgb(69, 157, 168);
+}
+
+/*.service_box .overlay > *{
+    position: relative;
+    z-index: 2;
+}
+*/
+
+/*
+.services_container .overlay{
+    background-image: url(images/portfolio7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+*/
+
+.service_box .overlay img{
+    width: 100px
+}
+
+/*
+.service_box .overlay::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 4);
+    border-radius: 15px;
+    z-index: 1;
+}
+*/
+
+
+/**********************  Portfolio Styles       **********************/
+#portfolio{
+    background-color: rgb(60, 59, 59);
+}
+
+.portfolio_content  .portfolio_text{
+    padding: 50px 100px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.filter_btns_container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.filter_btns_container ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-top: 10px; 
+}
+.filter_btns_container ul li{
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    margin: 0 25px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.filter_btns_container ul li a{
+    margin: 0 25px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.project_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 15px;
+    grid-gap: 0.7rem;
+    margin-top: 40px;
+}
+.project_container .project_box{
+    position: relative;
+    overflow: hidden;
+}
+.project_container .project_box .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-weight: 600;
+    color: #333333;
+    background-color: #ffde7d;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(60%);
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+.project_box .overlay i{
+    font-size: 25pt;
+    margin-bottom: 10px;
+    color: #777777;
+    cursor: pointer;
+}
+
+.project_box .overlay h3{
+    cursor: pointer;
+}
+
+.project_box .overlay a{
+    text-decoration: none;
+}
+
+.project_container .project_box:hover .overlay{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+
+/**********************  Experience Styles       **********************/
+
+.experience_container  .experience_text{
+    padding: 50px 100px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.experience_content {
+    display: flex;
+    padding: 0 15px;
+}
+
+.experience_box{
+    background-color: rgb(60, 59, 59);
+    border: 1px solid ;
+    border-style: solid; 
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(60, 59, 59);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 70px 40px;
+    transition: all 0.3s;
+}
+.experience_box:hover {
+    background-color: #feb633;
+    color: #000000;
+}
+.experience_box h2{
+    color: #ffffff;
+    font-size: 20pt;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.experience_box:hover h2{
+    color: #333333;
+}
+.experience_box span{
+    color: #9f9f9f;
+    font-size: 18px;
+}
+
+.experience_box:hover span{
+    color: #333333;
+}
+.experience_box:hover p{
+    color: #333333;
+}
+
+/************************  Hire me Section Styles *******************/
+
+#hire_me{
+    background-color: rgb(60, 59, 59);
+}
+
+.hire_me_container .hire_button{
+    margin-top: 40px;
+}
+.hire_button a{
+    padding: 15px 75px;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16pt;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease;
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFF;
+}
+
+
+.hire_button a:hover{
+    background-color: #feb633;
+    color: #ffffff;
+}
+
+
+/************************  Contact Styles *******************/
+
+.contact_content{
+    padding-top: 60px;
+}
+
+.contact_form .form_content{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.con_info_title .con_info_menu li{
+    padding: 15px 0;
+}
+
+.contact_form .form_content .flex_row{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_content .flex_row_two{
+   display: flex;
+}
+
+
+
+.con_info_title h3{
+    color: #ffffff;
+}
+
+.con_info_title h5{
+    color: #FFF;
+    padding-top: 30px;
+}
+
+.con_info_title .social_links {
+    display: flex;
+}
+.con_info_title .social_links li{
+    margin: 5px 12px;
+    cursor: pointer;
+}
+.social_links a{
+    color: #777777;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.social_links a:hover{
+    color: #feb633;
+} 
+
+
+.con_info_title .con_info_menu{
+    padding: 5px 0 5px 15px;
+    color: #777777;
+}
+
+.form_content label{
+    color: #777777;
+}
+
+.form_content input{
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 6px 25px;
+    height: 60px;
+    margin-bottom: 30px;
+    background-color: #363737;
+    box-shadow: 0px 3px 4px 0px rgba(0, 12, 29, 0.06);
+}
+
+.form_content textarea{
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 6px 25px;
+    height: 150px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    background-color: #363737;
+    box-shadow: 0px 3px 4px 0px rgba(0, 12, 29, 0.06);
+}
+
+.form_content .submit_btn button{
+    margin: 10px 0 0 0;
+    padding: 15px 35px;
+    border: none;
+    border: 2px solid #feb633;
+    background-color: #feb633;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.form_content .submit_btn a{
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.form_content .submit_btn button:hover{
+    background-color: rgb(45, 44, 44);
+}
+
+.form_content .submit_btn button:hover a{
+    color: #feb633;
+}
+
+
+/************************  footer Styles *******************/
+
+
+.footer_content{
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_content h1{
+    font-weight: 700;
+    color: #feb633;
+    font-size: 55px;
+}
+
+.footer_content .social_links{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_content .social_links li{
+    padding: 5px 10px;
+}
+
+.footer_content .social_links li i{
+    font-size: 30px;
+}
+
+
+footer .copy{
+    padding: 21px 0;
+    background-color: #363737;
+    border-top: 1px solid #9f9f9f;
+}
+
+footer .copy_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+footer .copy_content .name{
+    color: #feb633;
+}
+
+
+
+
+/************************  Media Queries *******************/
+
+
+@media only screen and (max-width:1199px){
+    .home_content h2 {
+        font-size: 55px;
+    }
+    .home_content h3 {
+        font-size: 25px;
+    }
+    .about_content .about_buttons button {
+        color: #FFF;
+        background-color: #feb633;
+        font-size: 16pt;
+        padding: 15px 20px;
+        border-radius: 7px;
+        border: 2px solid #feb633;
+        transition: all .5s ease;
+        margin-right: 20px;
+    }
+    .experience_box {
+        background-color: rgb(60, 59, 59);
+        border: 1px solid;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgb(111, 104, 104);
+        display: table-cell;
+        vertical-align: middle;
+        padding: 70px 40px;
+        transition: all 0.3s;
+    }
+}
+
+
+@media only screen and (max-width:991px){
+    p{
+        font-size: 16px;
+    }
+
+    .navbar_container .container{
+        position: relative;
+    }
+    .navbar_links{
+        background-color: rgb(45, 44, 44);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -328%;
+        z-index: 11;
+        display: none;
+        
+    }
+    .navbar_links.show_links{
+        display: inline;
+        transition: all 3s ease;
+    }
+
+    .navbar_container .navbar_links ul {
+        display: grid;
+    }
+    .navbar_links ul li{
+        list-style: none;
+        display: flex;
+        padding: inherit;
+    }
+    .navbar_container .nav_toogle{
+        display: inline-block;
+    }
+
+    .home_content .info {
+        padding: 0;
+    }
+    .about_content{
+        display: inline;
+    }
+    .about_content .section_title{
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    .about_content .about_text{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    .about_content .about_text .about_buttons{
+        display: flex;
+    }
+
+    .experience_box h2 {
+        color: #ffffff;
+        font-size: 16pt;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    .experience_box {
+        background-color: rgb(60, 59, 59);
+        border: 1px solid;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgb(111, 104, 104);
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px 30px;
+        transition: all 0.3s;
+    }
+
+    .filter_btns_container ul li {
+        list-style: none;
+        display: inline;
+        cursor: pointer;
+        margin: 0px 15px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .form_content .submit_btn button {
+        margin: 10px 0 0 0;
+        padding: 10px 30px;
+        border: none;
+        border: 2px solid #feb633;
+        background-color: #feb633;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    .about_content .about_text .about_buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
+
+@media only  screen and (max-width:767px){
+    .navbar_logo h1{
+        font-size: 2.4rem;
+    }
+    .home_content{
+        display: inline;
+    }
+    .home_content h2 {
+        font-size: 40px;
+    }
+    .home_content h3 {
+        font-size: 18px;
+    }
+    .home_content .info {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .about_content .about_buttons button {
+        color: #FFF;
+        background-color: #feb633;
+        font-size: 16pt;
+        padding: 10px 15px;
+        border-radius: 7px;
+        border: 2px solid #feb633;
+        transition: all .5s ease;
+        margin-right: 20px;
+    }
+
+    .service_content .service_text {
+        padding: 20px 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .portfolio_content .portfolio_text {
+        padding: 20px 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .experience_container .experience_text {
+        padding: 20px 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .experience_content{
+        display: grid;
+    }
+
+    .experience_box {
+        background-color: rgb(60, 59, 59);
+        border: 1px solid;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgb(111, 104, 104);
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px 30px;
+        transition: all 0.3s;
+        margin-bottom: 15px;
+    }
+    .form_content .flex_row_two {
+        display: contents;
+    }
+    .contact_form .form_content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .filter_btns_container ul li {
+        list-style: none;
+        display: inline;
+        cursor: pointer;
+        margin: 0px 15px;
+        padding: 0px;
+        text-decoration: none;
+    }
+
+}
+
+
+@media only screen and (max-width:576px){
+    .filter_btns_container ul {
+        padding: 0;
+        margin: 0;
+        display: inline;
+        padding-top: 10px;
+    }
+
+    .section_title h1 {
+        color: #cccc;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .footer_content h1 {
+        font-weight: 700;
+        color: #feb633;
+        font-size: 50px;
+    }
+    
+}
+
+
+@media only screen and (max-width:410px){
+    .about_content .about_text .about_buttons {
+        display: inline-grid;
+        justify-content: center;
+    }
+    .about_content .about_buttons button {
+        color: #FFF;
+        background-color: #feb633;
+        font-size: 16pt;
+        padding: 10px 15px;
+        border-radius: 7px;
+        border: 2px solid #feb633;
+        transition: all .5s ease;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .project_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 0px 10px;
+        grid-gap: 1rem;
+        margin-top: 40px;
+    }
+    .form_content .submit_btn button {
+        margin: 10px 0 0 0;
+        padding: 7px 25px;
+        border: none;
+        border: 2px solid #feb633;
+        background-color: #feb633;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    .form_content .submit_btn a {
+        color: #ffffff;
+        font-size: 18px;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    #home .container {
+        padding-top: 25px;
+        padding-bottom: 110px;
+        
+    }
+    .info .hire_btn button {
+        color: #FFF;
+        background-color: #feb633;
+        font-size: 16pt;
+        padding: 10px 45px;
+        border-radius: 7px;
+        border: 2px solid #feb633;
+        transition: all .5s ease;
+    }
+    .service_box .overlay {
+        padding: 20px 15px;
+        color: #000000;
+    }
+}
